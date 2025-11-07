@@ -1,0 +1,96 @@
+.header {
+  background: linear-gradient(180deg, #0f1724, #0b1220 140%);
+  color: white;
+  padding: 0.85rem 1rem;
+  box-shadow: 0 6px 18px rgba(15,23,36,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  margin: 0;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-links a {
+  color: rgba(255,255,255,0.92);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  transition: background 160ms ease, transform 120ms ease;
+}
+
+.nav-links a:hover {
+  background: rgba(255,255,255,0.06);
+  transform: translateY(-1px);
+}
+
+.nav-links a.active {
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15) inset;
+}
+
+.nav-links a:focus {
+  outline: 3px solid rgba(14,165,164,0.2);
+  outline-offset: 2px;
+}
+
+.badge {
+  background: #ef4444;
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0 7px;
+  margin-left: 6px;
+  min-width: 20px;
+  line-height: 1.6;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 0 2px 6px rgba(239,68,68,0.2);
+  display: inline-block;
+}
+
+.badge:not(:empty) {
+  animation: badgePulse 2.2s infinite;
+}
+
+@keyframes badgePulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239,68,68,0.4); }
+  50% { box-shadow: 0 0 0 4px rgba(239,68,68,0); }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 0.65rem 0.8rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .nav-links {
+    gap: 0.4rem;
+  }
+}

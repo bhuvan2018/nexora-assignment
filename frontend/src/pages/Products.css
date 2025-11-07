@@ -1,0 +1,120 @@
+.products-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.message {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid rgba(16,185,129,0.1);
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 10px rgba(16,185,129,0.05);
+  font-weight: 500;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.product-card {
+  border: 1px solid rgba(15,23,36,0.06);
+  border-radius: 12px;
+  padding: 1.1rem 1rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(10,20,30,0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(10,20,30,0.08);
+}
+
+.product-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.05rem;
+  color: #111827;
+}
+
+.price {
+  font-weight: 700;
+  color: #0ea5a4;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.add-btn {
+  background: #0ea5a4;
+  color: white;
+  border: none;
+  padding: 0.55rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.add-btn:hover {
+  background: #08918f;
+  transform: translateY(-1px);
+}
+
+.add-btn:active {
+  transform: translateY(0);
+}
+
+.add-btn:disabled {
+  background: #ccc;
+  color: #f8f8f8;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.product-card::after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 3.1rem;
+  height: 1px;
+  background: rgba(15,23,36,0.04);
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.9rem;
+  }
+
+  .product-card {
+    padding: 0.8rem;
+  }
+
+  .product-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .add-btn {
+    font-size: 0.9rem;
+    padding: 0.45rem;
+  }
+}
