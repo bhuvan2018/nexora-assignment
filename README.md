@@ -29,7 +29,7 @@ Implements basic e-commerce functionality: product listing, cart management, and
 ## Demo Video
 
 Watch the full demo here:  
-▶️ [Click to Watch on YouTube](https://youtu.be/V2wTMN3k48M)
+[Click to Watch on YouTube](https://youtu.be/V2wTMN3k48M)
 ---
 
 ## Preview
