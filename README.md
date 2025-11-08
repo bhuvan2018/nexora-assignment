@@ -43,7 +43,7 @@ Implements basic e-commerce functionality: product listing, cart management, and
 ### Receipt
 ![Receipt](/assets/screenshots/s5.png)
 
-### (Optional) MongoDB Atlas
+### MongoDB Atlas
 ![MongoDB Collection](/assets/screenshots/s6.png)
 ---
 
