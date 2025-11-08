@@ -28,22 +28,22 @@ Implements basic e-commerce functionality: product listing, cart management, and
 
 ## Preview
 
-### 🛍️ Products
+### Products
 ![Products](/assets/screenshots/s1.png)
 
-### ➕ Added to Cart
+### Added to Cart
 ![Added to Cart](/assets/screenshots/s2.png)
 
-### 🧺 Cart Page
+### Cart Page
 ![Cart](/assets/screenshots/s3.png)
 
-### 💳 Checkout Modal
+### Checkout Modal
 ![Checkout Modal](/assets/screenshots/s4.png)
 
-### 🧾 Receipt
+### Receipt
 ![Receipt](/assets/screenshots/s5.png)
 
-### 🗄️ (Optional) MongoDB Atlas
+### (Optional) MongoDB Atlas
 ![MongoDB Collection](/assets/screenshots/s6.png)
 ---
 
